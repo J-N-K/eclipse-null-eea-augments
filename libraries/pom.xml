@@ -73,20 +73,14 @@
 
   <build>
     <!-- NB: Similar configuration also in examples/maven/jdt-ecj-settings/pom.xml -->
+    <!-- include only *.eea in the EEA jars -->
     <resources>
       <resource>
         <filtering>false</filtering>
         <directory>${project.basedir}</directory>
         <includes>
-          <include>**/*</include>
-          <include>eea-*.*</include>
+          <include>**/*.eea</include>
         </includes>
-        <excludes>
-          <exclude>.*</exclude>
-          <exclude>pom.xml</exclude>
-          <exclude>target/</exclude>
-          <exclude>.settings/</exclude>
-        </excludes>
       </resource>
     </resources>
     <plugins>
