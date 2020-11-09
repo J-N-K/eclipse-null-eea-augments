@@ -19,6 +19,7 @@
     <module>jdt-ecj-settings</module>
     <module>lib</module>
     <module>hello</module>
+    <module>limitations</module>
   </modules>
 
   <properties>
